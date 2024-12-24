@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row my-1">
+            <div class="col-md 12 text-center">
+                <h2 class="text-primary text-bold fw-bold" style="font-size: 60px;">facebook</h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card text-center ">
+                    <h3 class="my-3">Create a new account</h3>
+                    <p class="text-secondary">It's quick and easy.</p>
+                    <div>
+                        <form action="" >
+                            <div class="d-flex ">
+                                <input type="text" placeholder="first name" class="form-control w-50 m-2">
+                                <input type="text" placeholder="Surname" class="form-control w-50 m-2">
+                            </div>
+                            <p class="text-start m-1 mx-4" style="font-size: 13px;">date of birth</p>
+
+                            <div class="d-flex justify-content-around">
+                                <select name="day" id="select1" class="form-select w-25">
+                                </select>
+
+                                <select name="month" id="select2" class="form-select w-25">
+                                </select>
+
+                                <select name="year" id="select3" class="form-select w-25">
+                                </select>
+
+                            </div>
+                            <p class="text-start m-2 mx-4" style="font-size: 13px;">gender</p>
+                            <div class="input-group d-flex justify-content-around m-3">
+                                <div  class="input-group-text">
+                                    <label for="female">female</label>
+                                    <input type="radio" value="female" class="m-2" name="gender" onclick="genderHide()">
+                                </div>
+                                <div  class="input-group-text">
+                                    <label for="male">male</label>
+                                    <input type="radio" value="male" class="m-2" name="gender" onclick="genderHide()">
+                                </div>
+                                <div  class="input-group-text">
+                                    <label for="male">custom</label>
+                                    <input type="radio" value="male" class="m-2" name="gender" onclick="custom()">
+                                </div>
+                            </div>
+                            <div class="mx-3 hidden" id="gender">
+                                <select name="" label="" id="" class="form-select">
+                                    <option selected>select your pronoun</option>
+                                    <option>She: "Wish her a happy birthday!"</option>
+                                    <option>He: "Wish him a happy birthday!"</option>
+                                    <option>They: "Wish them a happy birthday!"</option>
+                                </select>
+                                <p class="text-start m-2" style="font-size: 13px;">Your pronoun is visible to everyone.</p>
+                                <input type="text" class="form-control w-100 m-2" placeholder="Gender (optional)">
+                            </div>
+                            <div class="mx-3">
+                                <input type="text" class="form-control w-100 m-2" placeholder="Mobile number or email address">
+                                <input type="text" class="form-control w-100 m-2" placeholder="New Password">
+                            </div>
+                            <div>
+                                <p class="text-start m-3" style="font-size: 13px;">People who use our service may have uploaded your contact information to Facebook. <a href="https://www.facebook.com/help/637205020878504">learn more</a></p>
+                                <p class="text-start m-3" style="font-size: 13px;">By clicking Sign Up, you agree to our <a href="/legal/terms/update" id="terms-link" target="_blank" rel="nofollow">Terms</a> , <a href="/about/privacy/update" id="privacy-link" target="_blank" rel="nofollow">Privacy Policy</a> . You may receive SMS notifications from us and can opt out at any time.</p>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-success w-25">Sign Up</button>
+                            </div>
+                            <a href="">Already have an email ?</a>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
